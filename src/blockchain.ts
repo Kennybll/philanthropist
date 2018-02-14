@@ -39,11 +39,11 @@ const genesisTransaction = {
         'address': '0447364cb10f4bbb15fa6f3f66243d50246ea794d2b96a378e2047da203f594e5a14fcc500fe4b8d54882efd049b21618b7a835f3c15e4000d5cd9ce580d67e46a',
         'amount': 50
     }],
-    'id': 'e655f6a5f26dc9b4cac6e46f52336428287759cf81ef5ff10854f69d68f43fa3'
+    'id': ''
 };
 
 const genesisBlock: Block = new Block(
-    0, '91a73664bc84c0baa1fc75ea6e4aa6d1d20c5df664c724e3159aefc2e1186627', '', 1465154705, [genesisTransaction], 0, 0
+    0, '', '', 1465154705, [genesisTransaction], 0, 0
 );
 
 let blockchain: Block[] = [genesisBlock];
