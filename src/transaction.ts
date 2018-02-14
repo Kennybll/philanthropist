@@ -146,8 +146,12 @@ const validateCoinbaseTx = (transaction: Transaction, blockIndex: number): boole
         console.log('the txIn signature in coinbase tx must be the block height');
         return false;
     }
-    if (transaction.txOuts.length !== 1) {
+    if (transaction.txOuts.length !== 2) {
         console.log('invalid number of txOuts in coinbase transaction');
+        return false;
+    }
+    if (transaction.txOuts[1].address !== "0447364cb10f4bbb15fa6f3f66243d50246ea794d2b96a378e2047da203f594e5a14fcc500fe4b8d54882efd049b21618b7a835f3c15e4000d5cd9ce580d67e46a") {
+        console.log('wrong charity address');
         return false;
     }
     if (transaction.txOuts[0].amount !== COINBASE_AMOUNT) {
