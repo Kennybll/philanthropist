@@ -12,7 +12,7 @@ The current algorithm is POW (Proof of Work). This will stay the same, but I wil
 
 The idea came from a mix of bitshares and wanting to help the world. Bitshares created a funding system to fund their workers all by the users voting for them. The funds came in the beginning. Then users can vote to where the funds can go. I want that but where users can vote what charities/nonprofits to help.
 
-## Installation
+## Installation (Daemon)
 
 > You must have [Nodejs Installed](https://nodejs.org/en/download/)
 
@@ -71,7 +71,7 @@ curl http://localhost:49028/peers
 ```
 
 ## Wallet
-For the wallet to work correctly you must have philanthropistcoin from the base folder running (up above).
+For the wallet to work correctly you must have the daemon from the base folder running (up above).
 
 Go to into the wallet directory and run:
 
