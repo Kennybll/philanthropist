@@ -68,6 +68,8 @@ npm start
 
 And go to http://localhost:49030/
 
+Your private key is at the basefolder/node/wallet/private_key
+
 ## Blockchain Explorer
 
 The official explorer is at http://144.76.63.8/
