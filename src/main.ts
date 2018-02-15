@@ -13,7 +13,7 @@ import {getPublicFromWallet, initWallet} from './wallet';
 const httpPort: number = parseInt(process.env.HTTP_PORT) || 49028;
 const p2pPort: number = parseInt(process.env.P2P_PORT) || 49029;
 
-let mine = false;
+let mine = null;
 
 const initHttpServer = (myHttpPort: number) => {
     const app = express();
@@ -70,11 +70,16 @@ const initHttpServer = (myHttpPort: number) => {
     });
 
     app.post('/mineBlock', (req, res) => {
-        mine = true;
+        mine = setInterval(() => {
+            const newBlock: Block = generateNextBlock();
+        }, 15000);
+        res.send();
     });
 
     app.post('/stopMineBlock', (req, res) => {
-        mine = false;
+        clearInterval(mine);
+        mine = null;
+        res.send();
     });
 
     app.get('/balance', (req, res) => {
@@ -140,7 +145,3 @@ const initHttpServer = (myHttpPort: number) => {
 initHttpServer(httpPort);
 initP2PServer(p2pPort);
 initWallet();
-
-while(mine) {
-    const newBlock: Block = generateNextBlock();
-}
