@@ -41,7 +41,6 @@ const initConnection = (ws: WebSocket) => {
     // query transactions pool only some time after chain query
     setTimeout(() => {
         broadcast(queryTransactionPoolMsg());
-        write(ws, responseChainMsg());
     }, 500);
 };
 
@@ -159,9 +158,6 @@ const handleBlockchainResponse = (receivedBlocks: Block[]) => {
             if (addBlockToChain(latestBlockReceived)) {
                 broadcast(responseLatestMsg());
             }
-        } else if (receivedBlocks.length === 1) {
-            console.log('We have to query the chain from our peer');
-            broadcast(queryAllMsg());
         } else {
             console.log('Received blockchain is longer than current blockchain');
             replaceChain(receivedBlocks);
