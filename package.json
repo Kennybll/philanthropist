@@ -5,6 +5,7 @@
   "scripts": {
     "prestart": "npm run compile",
     "start": "node src/main.js",
+    "public": "npm run compile && node src/public.js",
     "compile": "tsc"
   },
   "dependencies": {
