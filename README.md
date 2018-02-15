@@ -1,5 +1,19 @@
 # PhilanthropistCoin
 
+Anyone and everyone who loves cryptocurrency can help the world.
+
+PhilanthropistCoin is a javascript coin, wallet, and block explorer. It was forked from naive-coin.
+
+Every time someone mines a block they get 50 PhilanthropistCoins. But an extra 50 PhilanthropistCoins goes to a "charity" address where nonprofits/charities can request funds from.
+
+Currently the code only supports transactions. Soon I will make a way for users to vote where the "charity" funds go.
+
+The current algorithm is POW (Proof of Work). This will stay the same, but I will also add in DPOS (Delegated Proof of Stake). That addition will allow for the voting.
+
+The idea came from a mix of bitshares and wanting to help the world. Bitshares created a funding system to fund their workers all by the users voting for them. The funds came in the beginning. Then users can vote to where the funds can go. I want that but where users can vote what charities/nonprofits to help.
+
+## Installation
+
 > You must have [Nodejs Installed](https://nodejs.org/en/download/)
 
 ```
