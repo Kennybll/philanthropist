@@ -56,8 +56,7 @@ curl -H "Content-type:application/json" --data '{"peer" : "ws://localhost:49029"
 curl http://localhost:49028/peers
 ```
 
-## Wallet - Windows Only - Mac/Linux To Come
-
+## Wallet
 For the wallet to work correctly you must have philanthropistcoin from the base folder running (up above).
 
 Go to into the wallet directory and run:
