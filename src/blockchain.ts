@@ -39,7 +39,7 @@ const genesisTransaction = {
         'address': '0447364cb10f4bbb15fa6f3f66243d50246ea794d2b96a378e2047da203f594e5a14fcc500fe4b8d54882efd049b21618b7a835f3c15e4000d5cd9ce580d67e46a',
         'amount': 50
     }],
-    'id': ''
+    'id': 'ee0e4e5323e56dd138a4fc1515422122c42569257ce5b7e566944c90b481a541'
 };
 
 const genesisBlock: Block = new Block(
