@@ -1,3 +1,5 @@
+# For the mean time, this project is on hold
+
 # PhilanthropistCoin
 
 Anyone and everyone who loves cryptocurrency can help the world.
