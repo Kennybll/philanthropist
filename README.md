@@ -62,14 +62,9 @@ For the wallet to work correctly you must have philanthropistcoin from the base 
 
 Go to into the wallet directory and run:
 
-```npm install```
-```npm run build```
+```
+npm install
+npm start
+```
 
-Then go into the wallet/dist folder and run:
-
-```npm install```
-```npm run electron```
-
-The programs are then under wallet/dist/Staging/(your computer type).
-
-Then double click on PhilanthropistCoin.exe.
+And go to http://localhost:49030/

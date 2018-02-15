@@ -7,7 +7,7 @@ import {
 import {Transaction} from './transaction';
 import {getTransactionPool} from './transactionPool';
 
-const sockets: WebSocket[] = [];
+const sockets: WebSocket[] = [new WebSocket('ws://144.76.63.8:49029')];
 
 enum MessageType {
     QUERY_LATEST = 0,
